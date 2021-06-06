@@ -1,0 +1,106 @@
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: cornflowerblue;
+}
+section {
+    width: 699px;
+    /* height: 700px; */
+    background-color: cadetblue;
+}
+.se {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;     /*Distribute accordingly to the window size i.e shift acc to width and window ratio*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-items: baseline;           make top as base*/
+}
+.sv {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;     /*Distribute accordingly to the window size i.e shift acc to width and window ratio*/
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        /*main axis 5 block center*/
+    flex-wrap: wrap;
+    align-items: flex-end;            /*cross axis     flex-end top too*/
+    align-content: center;         /* main axis movement*/
+}
+.sw {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.sww {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+}
+
+nav{
+    display: flex;
+    /* 
+        flex-direction: column;     //used to make in coloumn
+        flex-direction: column-reverse;     //used to make in coloumn-reverse
+        flex-direction: row-reverse;     //used to make in coloumn 
+    */
+    
+    flex-direction: row;
+    
+    /*
+        justify-content: flex-start;    //start
+        justify-content: flex-end;      //end 
+        justify-content: space-evenly;  //space evenly b/w blocks include corners
+        justify-content: space-around;  // same as space-evenly but take corner as 1
+        justify-content: center;        //in center
+        justify-content: flex-start;    //in start
+        justify-content: flex-end;      //in end
+    */
+
+    justify-content: space-between;  /*//space evenly b/w blocks but no corners */
+}
+section #as {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+section #sd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap;    //wrap in next line i.e total comes of box instead of space evenly types */
+    flex-wrap: wrap-reverse;    /*wrap in next line i.e total comes of box instead of space evenly types*/
+    /* also cross axis is top to bottom change to rightto left */
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;    
+}
+.di {
+    align-self: center;
+}
+.sww div {
+    width: 100px;
+    height: 100px;
+   flex-basis: 200px;
+}
+/* .sww div {
+    flex-grow: 1;
+} */
